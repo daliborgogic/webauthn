@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "wrangler dev --local --inspect false --port 3000 src/index.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^2.1.10"
+  },
+  "dependencies": {
+    "cbor": "^8.1.0"
+  }
+}
