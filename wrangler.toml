@@ -1,3 +1,4 @@
 name = 'webauthn'
 main = 'src/index.mjs'
+node_compat = true
 compatibility_date = '2022-10-07'

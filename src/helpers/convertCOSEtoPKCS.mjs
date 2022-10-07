@@ -1,27 +1,27 @@
-import { decodeCborFirst } from './decodeCbor.mjs';
+import { decodeCborFirst } from './decodeCbor.mjs'
 
 /**
  * Takes COSE-encoded public key and converts it to PKCS key
  */
 export function convertCOSEtoPKCS(cosePublicKey) {
-  const struct = decodeCborFirst(cosePublicKey);
+  const struct = decodeCborFirst(cosePublicKey)
 
-  const tag = Buffer.from([0x04]);
-  const x = struct.get(COSEKEYS.x);
-  const y = struct.get(COSEKEYS.y);
+  const tag = Buffer.from([0x04])
+  const x = struct.get(COSEKEYS.x)
+  const y = struct.get(COSEKEYS.y)
 
   if (!x) {
-    throw new Error('COSE public key was missing x');
+    throw new Error('COSE public key was missing x')
   }
 
   if (y) {
-    return Buffer.concat([tag, x, y]);
+    return Buffer.concat([tag, x, y])
   }
 
-  return Buffer.concat([tag, x]);
+  return Buffer.concat([tag, x])
 }
 
-export const COSEKEYS =  {
+export const COSEKEYS = {
   kty: 1,
   alg: 3,
   crv: -1,
@@ -31,10 +31,10 @@ export const COSEKEYS =  {
   e: -2
 }
 
-export const COSEKTY =  {
+export const COSEKTY = {
   OKP: 1,
   EC2: 2,
-  RSA: 3,
+  RSA: 3
 }
 
 export const COSERSASCHEME = {
@@ -44,11 +44,11 @@ export const COSERSASCHEME = {
   '-65535': 'pkcs1-sha1',
   '-257': 'pkcs1-sha256',
   '-258': 'pkcs1-sha384',
-  '-259': 'pkcs1-sha512',
-};
+  '-259': 'pkcs1-sha512'
+}
 
 // See https://w3c.github.io/webauthn/#sctn-alg-identifier
-export const COSECRV  = {
+export const COSECRV = {
   // alg: -7
   1: 'p256',
   // alg: -35
@@ -56,8 +56,8 @@ export const COSECRV  = {
   // alg: -36
   3: 'p521',
   // alg: -8
-  6: 'ed25519',
-};
+  6: 'ed25519'
+}
 
 export const COSEALGHASH = {
   '-65535': 'sha1',
@@ -70,5 +70,5 @@ export const COSEALGHASH = {
   '-36': 'sha512',
   '-35': 'sha384',
   '-8': 'sha512',
-  '-7': 'sha256',
-};
+  '-7': 'sha256'
+}

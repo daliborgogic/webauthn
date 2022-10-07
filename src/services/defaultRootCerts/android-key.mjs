@@ -9,7 +9,7 @@
  * SHA256 Fingerprint
  * C1:98:4A:3E:F4:5C:1E:2A:91:85:51:DE:10:60:3C:86:F7:05:1B:22:49:C4:89:1C:AE:32:30:EA:BD:0C:97:D5
  */
- export const Google_Hardware_Attestation_Root_1 = `-----BEGIN CERTIFICATE-----
+export const Google_Hardware_Attestation_Root_1 = `-----BEGIN CERTIFICATE-----
  MIIFYDCCA0igAwIBAgIJAOj6GWMU0voYMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNV
  BAUTEGY5MjAwOWU4NTNiNmIwNDUwHhcNMTYwNTI2MTYyODUyWhcNMjYwNTI0MTYy
  ODUyWjAbMRkwFwYDVQQFExBmOTIwMDllODUzYjZiMDQ1MIICIjANBgkqhkiG9w0B
@@ -40,20 +40,20 @@
  MDSXYrB4I4WHXPGjxhZuCuPBLTdOLU8YRvMYdEvYebWHMpvwGCF6bAx3JBpIeOQ1
  wDB5y0USicV3YgYGmi+NZfhA4URSh77Yd6uuJOJENRaNVTzk
  -----END CERTIFICATE-----
- `;
- 
- /**
-  * Google Hardware Attestation Root 2
-  *
-  * Downloaded from https://developer.android.com/training/articles/security-key-attestation#root_certificate
-  * (second entry)
-  *
-  * Valid until 2034-11-18 @ 12:37 PST
-  *
-  * SHA256 Fingerprint
-  * 1E:F1:A0:4B:8B:A5:8A:B9:45:89:AC:49:8C:89:82:A7:83:F2:4E:A7:30:7E:01:59:A0:C3:A7:3B:37:7D:87:CC
-  */
- export const Google_Hardware_Attestation_Root_2 = `-----BEGIN CERTIFICATE-----
+ `
+
+/**
+ * Google Hardware Attestation Root 2
+ *
+ * Downloaded from https://developer.android.com/training/articles/security-key-attestation#root_certificate
+ * (second entry)
+ *
+ * Valid until 2034-11-18 @ 12:37 PST
+ *
+ * SHA256 Fingerprint
+ * 1E:F1:A0:4B:8B:A5:8A:B9:45:89:AC:49:8C:89:82:A7:83:F2:4E:A7:30:7E:01:59:A0:C3:A7:3B:37:7D:87:CC
+ */
+export const Google_Hardware_Attestation_Root_2 = `-----BEGIN CERTIFICATE-----
  MIIFHDCCAwSgAwIBAgIJANUP8luj8tazMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNV
  BAUTEGY5MjAwOWU4NTNiNmIwNDUwHhcNMTkxMTIyMjAzNzU4WhcNMzQxMTE4MjAz
  NzU4WjAbMRkwFwYDVQQFExBmOTIwMDllODUzYjZiMDQ1MIICIjANBgkqhkiG9w0B
@@ -83,4 +83,4 @@
  ZutL8VuFkERQGt6vQ2OCw0sV47VMkuYbacK/xyZFiRcrPJPb41zgbQj9XAEyLKCH
  ex0SdDrx+tWUDqG8At2JHA==
  -----END CERTIFICATE-----
- `;
+ `
