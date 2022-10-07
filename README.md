@@ -10,7 +10,7 @@
 
 ## Supported Attestation Formats
 
-SimpleWebAuthn supports [all current WebAuthn attestation formats](https://w3c.github.io/webauthn/#sctn-defined-attestation-formats), including:
+`@dlbr/webauthn-worker` supports [all current WebAuthn attestation formats](https://w3c.github.io/webauthn/#sctn-defined-attestation-formats), including:
 
 - **Packed**
 - **TPM**
